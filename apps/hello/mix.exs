@@ -15,10 +15,11 @@ defmodule Hello.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :hello_elixir]]
+    [applications: [:logger, :hello_elixir, :hello_erlang]]
   end
 
   defp deps do
-    [{:hello_elixir, in_umbrella: true}]
+    [{:hello_elixir, in_umbrella: true},
+     {:hello_erlang, in_umbrella: true, manager: :rebar3}]
   end
 end

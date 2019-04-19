@@ -1,0 +1,9 @@
+hello_gleam
+=====
+
+An OTP application
+
+Build
+-----
+
+    $ rebar3 compile

@@ -1,7 +1,7 @@
 defmodule Hello.Mixfile do
   use Mix.Project
 
-  def project do
+  def project() do
     [
       app: :hello,
       version: "0.1.0",
@@ -9,18 +9,14 @@ defmodule Hello.Mixfile do
       config_path: "../../config/config.exs",
       deps_path: "../../deps",
       lockfile: "../../mix.lock",
-      elixir: "~> 1.3",
+      elixir: "~> 1.5",
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
 
-  def application do
-    [applications: [:logger, :hello_elixir, :hello_erlang, :hello_lfe, :hello_gleam]]
-  end
-
-  defp deps do
+  defp deps() do
     [
       {:hello_elixir, in_umbrella: true},
       {:hello_erlang, in_umbrella: true, manager: :rebar3},

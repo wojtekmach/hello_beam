@@ -1,6 +1,6 @@
 # HelloBEAM
 
-Elixir, Erlang & LFE code all in the same project!
+Elixir, Erlang, Gleam & LFE code all in the same project!
 
 ## Usage
 
@@ -8,18 +8,29 @@ Elixir, Erlang & LFE code all in the same project!
 $ git clone https://github.com/wojtekmach/hello_beam
 $ cd hello_beam
 $ iex -S mix
+```
 
-iex> HelloElixir.hello
+
+```elixir
+iex> HelloElixir.hello()
 "Hello from Elixir!"
 
-iex> :hello_erlang.hello
-'Hello from Erlang!"
+iex> :hello_erlang.hello()
+"Hello from Erlang!"
 
-iex> :hello_lfe.hello
-'Hello from LFE!'
+iex> :hello_gleam.hello()
+"Hello from Gleam!"
 
-iex> Hello.hello
-{"Hello from Elixir!", "Hello from Erlang!", "Hello from LFE!"}
+iex> :hello_lfe.hello()
+"Hello from LFE!"
+
+iex> Hello.hello()
+[
+  "Hello from Elixir!",
+  "Hello from Erlang!",
+  "Hello from Gleam!",
+  "Hello from LFE!"
+]
 ```
 
 ## Tests
@@ -30,4 +41,4 @@ $ ./test.sh
 
 ## License
 
-MIT
+Apache 2.0

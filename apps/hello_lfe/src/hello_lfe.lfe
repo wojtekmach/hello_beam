@@ -2,4 +2,4 @@
   (export all))
 
 (defun hello ()
-  "Hello from LFE!")
+  #"Hello from LFE!")

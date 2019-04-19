@@ -1,3 +1,3 @@
 pub fn hello() {
-  "Hello, from Gleam!"
+  "Hello from Gleam!"
 }

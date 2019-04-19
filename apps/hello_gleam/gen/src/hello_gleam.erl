@@ -1,13 +1,7 @@
 -module(hello_gleam).
 -compile(no_auto_import).
 
--export([hello/1]).
+-export([hello/0]).
 
-hello(Name) ->
-    case Name of
-        X ->
-            X;
-
-        _ ->
-            <<"Hello, from Gleam!">>
-    end.
+hello() ->
+    <<"Hello from Gleam!">>.

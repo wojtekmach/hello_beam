@@ -5,7 +5,7 @@ Elixir, Erlang, Gleam & LFE code all in the same project!
 ## Usage
 
 ```
-# gleam compiler was at v 0.1.2 at this time (6d3906e)
+# gleam compiler was at v0.1.2 at this time (6d3906e)
 
 $ git clone https://github.com/wojtekmach/hello_beam
 $ cd hello_beam

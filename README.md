@@ -9,10 +9,17 @@ Elixir, Erlang, Gleam & LFE code all in the same project!
 
 $ git clone https://github.com/wojtekmach/hello_beam
 $ cd hello_beam
+# install asdf-vm: https://asdf-vm.com/#/core-manage-asdf-vm?id=install-asdf-vm
+$ asdf plugin-add erlang
+$ asdf install erlang 22.1.1
+$ asdf local erlang 22.1.1
+$ asdf plugin-add elixir
+$ asdf install elixir 1.9.1-otp-22
+$ asdf local elixir 1.9.1-otp-22
+$ asdf plugin-add gleam
+$ asdf install gleam 0.4.1
+$ asdf local gleam 0.4.1
 $ mix deps.get
-$ cd hello_gleam
-$ rebar3 compile
-$ cd ..
 $ iex -S mix
 ```
 

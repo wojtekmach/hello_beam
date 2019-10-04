@@ -1,3 +1,4 @@
 %{
   "gleam_experimental_stdlib": {:hex, :gleam_experimental_stdlib, "0.1.1", "829ca1193b68102ddc490164832ea43f30f27ce80cb294b1a733ca6d634833d0", [:rebar3], [], "hexpm"},
+  "gleam_stdlib": {:hex, :gleam_stdlib, "0.4.0", "4a53a69aa534d22bae6e4bfddbfebb3a9012b1713e6d4b0eccdd0a2daf8824dc", [:rebar3], [], "hexpm"},
 }

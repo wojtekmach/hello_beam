@@ -4,4 +4,4 @@
 -export([hello_test/0]).
 
 hello_test() ->
-    expect:equal(hello_gleam:hello(), <<"Hello from Gleam!">>).
+    gleam@expect:equal(hello_gleam:hello(), <<"Hello from Gleam!">>).
